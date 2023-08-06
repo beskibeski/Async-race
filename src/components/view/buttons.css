@@ -1,0 +1,28 @@
+.buttons {
+    display: flex;
+    gap: 1vw;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    border: solid 1px var(--color-secondary);
+    padding: 2px;
+    background: var(--color-button-main);
+    transition: all .3s;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button.inactive {
+    background-color: var(--color-button-inactive);
+    pointer-events: none;
+}
+
+.winners__win-sorting,
+.winners__time-sorting {
+    display: inline-block;
+    cursor: pointer;
+}

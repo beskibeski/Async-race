@@ -1,0 +1,69 @@
+.garage,
+.winners {
+    display: none;    
+}
+
+.garage.active,
+.winners.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-creation__create,
+.car-creation__update {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin: 2px;
+    align-items: center;
+}
+
+.garage-cars__car {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    gap: 2px;   
+}
+
+.garage-cars__road {
+    border-bottom: 2px dashed var(--color-secondary);
+}
+
+.garage-cars__car-image {
+    position: relative;    
+    margin-bottom: -14px;    
+}
+
+.garage-cars__flag {
+    display: block;   
+    padding-left: 55vw;
+}
+
+.garage-cars__car-block {
+    display: flex;
+    align-items: center;    
+    transform: scale(0.8);
+}
+
+.winners__table {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 1fr 4fr;
+    text-align: center;
+    align-items: center;
+}
+
+.winners__car-image {
+    transform: scale(0.7);
+}
+
+.garage-cars__winner-alert {
+    display: inline-block;
+    top: -20px;
+    position: absolute;    
+}
